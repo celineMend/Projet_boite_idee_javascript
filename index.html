@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boîte à Idées</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boîte à Idées</h1>
+        <form id="ideaForm">
+            <div>
+                <label for="libelle">Libellé:</label>
+                <input type="text" id="libelle" name="libelle" required>
+            </div>
+            <div>
+                <label for="categorie">Catégorie:</label>
+                <select id="categorie" name="categorie" required>
+                    <option value="politique">Politique</option>
+                    <option value="sport">Sport</option>
+                    <option value="santé">Santé</option>
+                    <option value="education">Éducation</option>
+                </select>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+        <div id="feedback" class="hidden"></div>
+        <div id="ideas"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
